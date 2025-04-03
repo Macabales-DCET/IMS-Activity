@@ -1,38 +1,164 @@
 .menu {
     overflow: hidden;
-    border: solid;
-    border-radius: 10px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px -1px #ccc;
   }
 
-  .menu a {
+.title {
     float: left;
     display: block;
-    color: black;
+    color: blue;
+    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 25px;
-  }
-
+    font-size: 27px;
+    font-weight: 700;
+    font-family: 'Segoe UI';
+}
 .menu input[type=text] {
     float: right;
-    padding: 6px;
-    border: solid;
-    border-radius: 10px;
-    margin-top: 8px;
-    margin-right: 20px;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-right: 10px;
     font-size: 20px;
+    font-family: 'Segoe UI';
 }
-  
-  @media screen and (max-width: 600px) {
-    .menu a, .menu input[type=text] {
-      float: none;
-      display: block;
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      padding: 14px;
-    }
-    .menu input[type=text] {
-      border: 1px solid #ccc;
-    }
+.add {
+    background-color: green;
+    color: white;
+    float: right;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-right: 16px;
+    font-size: 20px;
+    font-family: 'Segoe UI';
+}
+.add:hover {
+  background-color: rgb(0, 160, 0);
+}
+
+.search {
+  background-color: blue;
+  float: right;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-right: 16px;
+  font-size: 20px;
+  color: white;
+  font-family: 'Segoe UI';
+}
+.search:hover {
+  background-color: rgb(68, 68, 248);
+}
+
+.blankspace {
+  height: 30px;
+}
+
+.menu2 {
+  overflow: hidden;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 0px 5px 3px -1px #ccc;
+}
+.title2 {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: 700;
+  font-family: 'Segoe UI';
+}
+.space {
+  height: 57px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+}
+.thelabels {
+  display: flex;
+  font-family: 'Segoe UI';
+}
+.thebuttons {
+  display: flex;
+  margin-top: 5px;
+  font-family: 'Segoe UI';
+}
+.searchby {
+  padding-left: 10px;
+  padding-right: 200px;
+  float: left;
+  font-size: 17px;
+  font-family: 'Segoe UI';
+}
+.sortby {
+  float: left;
+  font-size: 17px;
+  font-family: 'Segoe UI';
+}
+.searchbu {
+  margin-left: 10px;
+  margin-right: 20px;
+  width: 250px;
+  float: left;
+  text-align: left;
+  font-size: 17px;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  font-family: 'Segoe UI';
+}
+
+.searchbu:hover {background-color: rgb(160, 160, 160);}
+
+.sortbu {
+  width: 250px;
+  float: left;
+  text-align: left;
+  font-size: 17px;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  font-family: 'Segoe UI';
+}
+
+.sortbu:hover {background-color: rgb(160, 160, 160);}
+
+.space2 {
+  height: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+}
+
+table {
+  width: 99%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: 'Segoe UI';
+}
+table, th, td {
+  border: 3px solid #ddd;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background: lightgray;
 }
