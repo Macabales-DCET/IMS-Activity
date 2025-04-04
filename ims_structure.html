@@ -12,7 +12,7 @@
         <a class="title">Inventory Management System</a>
         <a><button class="search" type="submit" name="confirmsearch"> Go </button></a>
         <a><input type="text" placeholder="Search items.."></a>
-        <a><button class="add" type="submit" name="additem"> + Add New Item </button></a>
+        <a><button onclick="toggleMenu()" class="add" type="submit" name="addnewitem"> + Add New Item </button></a>
     </div>
 
 <div class="blankspace"></div>
@@ -45,5 +45,29 @@
             </table>
         </div>
     </div>
+
+    <div class="addmenu" id="addmenuid">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1 class="menutitle">Create Item Menu</h1>
+            <div>
+                <input type="text" id="Name" placeholder="Name">
+                <input type="text" id="Details" placeholder="Details">
+                <input type="number" id="Stock" placeholder="Quantity">
+                <input type="number" id="Price" placeholder="Price (PHP)">
+                <input type="date" id="Date" placeholder="Date">
+            </div>
+            <div>
+                <button class="addprod" type="submit" onclick="addItem()">Add Item</button>
+                <button class="closemenu" type="submit" onclick="toggleMenu()">Cancel</div>
+            </div>   
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu(){
+            document.getElementById("addmenuid").classList.toggle("active");
+        }
+    </script>
 </body>
 </html>

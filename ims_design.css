@@ -162,3 +162,74 @@ th, td {
 th {
   background: lightgray;
 }
+
+/*Popup Menu*/
+.addmenu input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: block;
+  font-family: 'Segoe UI';
+}
+
+.menutitle {
+  text-align: center;
+  font-family: 'Segoe UI';
+}
+.overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  display: none;
+}
+.active .overlay {
+  display: block;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 4px black;
+  border-style: solid;
+  transform: translate(-50%, -50%) scale(0);
+  background: white;
+  width: 450px;
+  height: 550px;
+  z-index: 2;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.active .content {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.addprod {
+  background-color: blue;
+  color: white;
+  float: left;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: 'Segoe UI';
+}
+.addprod:hover{background-color: rgb(85, 85, 255);}
+.closemenu {
+  background-color: gray;
+  color: white;
+  float: right;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: 'Segoe UI';
+}
+.closemenu:hover{background-color: rgb(120, 120, 120);}
