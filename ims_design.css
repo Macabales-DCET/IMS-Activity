@@ -1,43 +1,43 @@
 /*Title, Add Item Button, and Search Input*/
 .menu {
-    overflow: hidden;
-    background-color: lightslategray;
-    border-radius: 5px;
-    box-shadow: 0px 5px 3px -1px #ccc;
-  }
+  overflow: hidden;
+  background-color: lightslategray;
+  border-radius: 5px;
+  box-shadow: 0px 5px 3px -1px #ccc;
+}
 
 .title {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 27px;
-    font-weight: 700;
-    font-family: 'Segoe UI';
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: 700;
+  font-family: 'Segoe UI';
 }
 .menu input[type=text] {
-    float: right;
-    padding: 7px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 15px;
-    margin-right: 10px;
-    font-size: 20px;
-    font-family: 'Segoe UI';
+  float: right;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: 'Segoe UI';
 }
 .add {
-    background-color: grey;
-    color: white;
-    float: right;
-    padding: 7px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 15px;
-    margin-right: 16px;
-    font-size: 20px;
-    font-family: 'Segoe UI';
+  background-color: grey;
+  color: white;
+  float: right;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-right: 16px;
+  font-size: 20px;
+  font-family: 'Segoe UI';
 }
 .add:hover {
   background-color: rgb(150, 150, 150);

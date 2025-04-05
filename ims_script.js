@@ -1,7 +1,15 @@
+/*Search Product*/
+const searchinput = document.getElementById("searchinput");
+const searchbutton = document.getElementById("searchbutton");
+
+searchinput.addEventListener('input', handleSearchInput);
+
+/*Open Add Modal*/
 function toggleMenu(){
     document.getElementById("addmenuid").classList.toggle("active");
 }
 
+/*Add Product*/
 function addItem() {
     let image = document.getElementById("itemimage").value;
     let name = document.getElementById("itemname").value;
@@ -10,12 +18,13 @@ function addItem() {
     let price = document.getElementById("itemprice").value;
     let date = document.getElementById("itemdate").value;
 
-    if (name.trim() !== "" && stock.trim() !== "") {
+    if (name.trim() !== "" && details.trim() !== "" && stock.trim() !== "" && price.trim() !== "" && date.trim() !== "") {
+        alert("Product created succesfully!")
         let table = document.getElementById("Table");
         let row = table.insertRow();
         row.innerHTML = `
             <td>${image}</td>
-            <td>${name}</td>
+            <td class="name">${name}</td>
             <td>${details}</td>
             <td>${stock}</td>
             <td>${price}</td>
@@ -29,10 +38,14 @@ function addItem() {
         document.getElementById("itemprice").value = "";
         document.getElementById("itemdate").value = "";
     } else {
-        alert("Product name and quantity required.");
+        alert("Please fill in everything (Image Not Required).");
     }
 }
+/*Open Edit Modal*/
 
+/*Edit Product*/
+
+/*Delete Product*/
 function removeItem(button) {
     let row = button.parentNode.parentNode;
     row.parentNode.removeChild(row);

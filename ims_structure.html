@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Distant Mini Grocer IMS v1.3</title>
+    <title>Distant Mini Grocer IMS v1.5</title>
     <link rel="stylesheet" href="ims_design.css">
     <script src="ims_script.js"></script>
 </head>
 <body>
     <div class="menu">
         <a class="title">Inventory Management System</a>
-        <a><button class="search" type="submit" name="confirmsearch"> Go </button></a>
-        <a><input type="text" placeholder="Search items.."></a>
+        <a><button onclick="toggleSearch()" id="searchbutton" class="search" type="submit" name="confirmsearch"> Go </button></a>
+        <a><input onkeyup="searchProduct()" id="searchinput" type="text" placeholder="Search items.."></a>
         <a><button onclick="toggleMenu()" class="add" type="submit" name="addnewitem"> + Add New Item </button></a>
     </div>
 
@@ -26,8 +26,8 @@
         <label class="sortby" for="datesort">Sort By:</label>
         </div>
         <div class="thebuttons">
-        <button class="searchbu" type="submit" onclick="" name="productsearch">Product Name</button>
-        <button class="sortbu" type="submit" onclick="" name="datesort">Date Added (Oldest)</button>
+        <button onclick="" class="searchbu" type="submit" name="productsearch">Product Name</button>
+        <button onclick="" class="sortbu" type="submit"  name="datesort">Date Added (Oldest)</button>
         </div>
         <div class="space2"></div>
         <div>
