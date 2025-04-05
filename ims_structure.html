@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farstore IMS v0.3</title>
+    <title>Distant Mini Grocer IMS v1.3</title>
     <link rel="stylesheet" href="ims_design.css">
+    <script src="ims_script.js"></script>
 </head>
 <body>
     <div class="menu">
@@ -33,11 +34,12 @@
             <table>
                 <thead>
                     <tr>
+                        <th style="width:16%" class="image">Image</th>
                         <th style="width:20%" class="name">Product Name</th>
                         <th style="width:25%" class="details">Details</th>
-                        <th style="width:10%" class="qnt">Quantity</th>
-                        <th style="width:10%" class="price">Price</th>
-                        <th style="width:20%" class="date">Date Added</th>
+                        <th style="width:7%" class="qnt">Quantity</th>
+                        <th style="width:7%" class="price">Price (PHP)</th>
+                        <th style="width:10%" class="date">Date Added</th>
                         <th style="width:14%" class="act">Action</th>
                     </tr>
                 </thead>
@@ -51,11 +53,12 @@
         <div class="content">
             <h1 class="menutitle">Create Item Menu</h1>
             <div>
-                <input type="text" id="Name" placeholder="Name">
-                <input type="text" id="Details" placeholder="Details">
-                <input type="number" id="Stock" placeholder="Quantity">
-                <input type="number" id="Price" placeholder="Price (PHP)">
-                <input type="date" id="Date" placeholder="Date">
+                <input type="image" id="itemimage" placeholder="Image">
+                <input type="text" id="itemname" placeholder="Name">
+                <input type="text" id="itemdetails" placeholder="Details">
+                <input type="number" id="itemstock" placeholder="Quantity">
+                <input type="number" id="itemprice" placeholder="Price (PHP)">
+                <input type="date" id="itemdate" placeholder="Date">
             </div>
             <div>
                 <button class="addprod" type="submit" onclick="addItem()">Add Item</button>
@@ -63,11 +66,5 @@
             </div>   
         </div>
     </div>
-
-    <script>
-        function toggleMenu(){
-            document.getElementById("addmenuid").classList.toggle("active");
-        }
-    </script>
 </body>
 </html>

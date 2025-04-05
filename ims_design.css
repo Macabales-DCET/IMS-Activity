@@ -1,6 +1,7 @@
+/*Title, Add Item Button, and Search Input*/
 .menu {
     overflow: hidden;
-    background-color: whitesmoke;
+    background-color: lightslategray;
     border-radius: 5px;
     box-shadow: 0px 5px 3px -1px #ccc;
   }
@@ -8,7 +9,7 @@
 .title {
     float: left;
     display: block;
-    color: blue;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -27,7 +28,7 @@
     font-family: 'Segoe UI';
 }
 .add {
-    background-color: green;
+    background-color: grey;
     color: white;
     float: right;
     padding: 7px;
@@ -39,11 +40,11 @@
     font-family: 'Segoe UI';
 }
 .add:hover {
-  background-color: rgb(0, 160, 0);
+  background-color: rgb(150, 150, 150);
 }
 
 .search {
-  background-color: blue;
+  background-color: rgb(0, 0, 200);
   float: right;
   padding: 7px;
   border: none;
@@ -55,13 +56,14 @@
   font-family: 'Segoe UI';
 }
 .search:hover {
-  background-color: rgb(68, 68, 248);
+  background-color: rgb(41, 41, 248);
 }
 
 .blankspace {
   height: 30px;
 }
 
+/*Inventory Section*/
 .menu2 {
   overflow: hidden;
   background-color: whitesmoke;
@@ -119,7 +121,6 @@
   padding-left: 10px;
   font-family: 'Segoe UI';
 }
-
 .searchbu:hover {background-color: rgb(160, 160, 160);}
 
 .sortbu {
@@ -134,7 +135,6 @@
   padding-left: 10px;
   font-family: 'Segoe UI';
 }
-
 .sortbu:hover {background-color: rgb(160, 160, 160);}
 
 .space2 {
@@ -210,7 +210,7 @@ th {
 }
 
 .addprod {
-  background-color: blue;
+  background-color: green;
   color: white;
   float: left;
   padding: 10px;
@@ -220,9 +220,9 @@ th {
   font-size: 20px;
   font-family: 'Segoe UI';
 }
-.addprod:hover{background-color: rgb(85, 85, 255);}
+.addprod:hover{background-color: rgb(3, 154, 3);}
 .closemenu {
-  background-color: gray;
+  background-color: red;
   color: white;
   float: right;
   padding: 10px;
@@ -232,4 +232,28 @@ th {
   font-size: 20px;
   font-family: 'Segoe UI';
 }
-.closemenu:hover{background-color: rgb(120, 120, 120);}
+.closemenu:hover{background-color: rgb(255, 100, 100);}
+
+.edit {
+  background-color: blue;
+  color: white;
+  float: left;
+  padding: 15px 30px 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: 'Segoe UI';
+}
+.edit:hover{background-color: rgb(85, 85, 255);}
+
+.remove {
+  background-color: red;
+  color: white;
+  float: right;
+  padding: 15px 10px 15px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: 'Segoe UI';
+}
+.remove:hover{background-color: rgb(255, 100, 100);}
