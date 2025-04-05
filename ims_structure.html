@@ -26,8 +26,8 @@
         <label class="sortby" for="datesort">Sort By:</label>
         </div>
         <div class="thebuttons">
-        <button class="searchbu" type="submit" name="productsearch">Product Name</button>
-        <button class="sortbu" type="submit" name="datesort">Date Added (Oldest)</button>
+        <button class="searchbu" type="submit" onclick="" name="productsearch">Product Name</button>
+        <button class="sortbu" type="submit" onclick="" name="datesort">Date Added (Oldest)</button>
         </div>
         <div class="space2"></div>
         <div>
@@ -53,7 +53,7 @@
         <div class="content">
             <h1 class="menutitle">Create Item Menu</h1>
             <div>
-                <input type="image" id="itemimage" placeholder="Image">
+                <input class="imageupload" enctype="multipart/form-data" type="file" id="itemimage" accept="image/*" placeholder="Image">
                 <input type="text" id="itemname" placeholder="Name">
                 <input type="text" id="itemdetails" placeholder="Details">
                 <input type="number" id="itemstock" placeholder="Quantity">
