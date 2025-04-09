@@ -162,8 +162,13 @@ th, td {
 th {
   background: lightgray;
 }
+.displayimage {
+  width: 200px;
+  height: 200px;
+  border: none;
+}
 
-/*Popup Menu*/
+/*Add Popup Menu*/
 .addmenu input {
   width: calc(100% - 20px);
   padding: 10px;
@@ -238,7 +243,7 @@ th {
   background-color: blue;
   color: white;
   float: left;
-  padding: 15px 30px 15px 30px;
+  padding: 7px 15px 7px 15px;
   border: none;
   border-radius: 5px;
   font-size: 20px;
@@ -250,10 +255,81 @@ th {
   background-color: red;
   color: white;
   float: right;
-  padding: 15px 10px 15px 10px;
+  padding: 7px 5px 7px 5px;
   border: none;
   border-radius: 5px;
   font-size: 20px;
   font-family: 'Segoe UI';
 }
 .remove:hover{background-color: rgb(255, 100, 100);}
+
+/*Edit Popup Menu*/
+.editmenu input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: block;
+  font-family: 'Segoe UI';
+}
+
+.emenutitle {
+  text-align: center;
+  font-family: 'Segoe UI';
+}
+.eoverlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  display: none;
+}
+.eactive .eoverlay {
+  display: block;
+}
+.econtent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 4px black;
+  border-style: solid;
+  transform: translate(-50%, -50%) scale(0);
+  background: white;
+  width: 450px;
+  height: 550px;
+  z-index: 2;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.eactive .econtent {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.savechanges {
+  background-color: green;
+  color: white;
+  float: left;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: 'Segoe UI';
+}
+.savechanges:hover{background-color: rgb(3, 154, 3);}
+.closeedit {
+  background-color: red;
+  color: white;
+  float: right;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: 'Segoe UI';
+}
+.closeedit:hover{background-color: rgb(255, 100, 100);}

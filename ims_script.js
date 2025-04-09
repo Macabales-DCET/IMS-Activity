@@ -41,10 +41,59 @@ function addItem() {
         alert("Please fill in everything (Image Not Required).");
     }
 }
-/*Open Edit Modal*/
+/*Open Edit Modal*/ /*Edit Product*/
+let currentlyEditingRow = null;
 
-/*Edit Product*/
+function editItem(button) {
+document.getElementById("editmenuid").classList.toggle("eactive");
+let row = button.parentNode.parentNode;
+currentlyEditingRow = row;
 
+    let image = row.cells[0].innerText;
+    let name = row.cells[1].innerText;
+    let details = row.cells[2].innerText;
+    let stock = row.cells[3].innerText;
+    let price = row.cells[4].innerText;
+    let date = row.cells[5].innerText;
+
+    document.getElementById("itemimage").value = image;
+    document.getElementById("itemname").value = name;
+    document.getElementById("itemdetails").value = details;
+    document.getElementById("itemstock").value = stock;
+    document.getElementById("itemprice").value = price;
+    document.getElementById("itemdate").value = date;
+}
+
+function saveChanges() {
+if (!currentlyEditingRow) return;
+    let image = document.getElementById("itemimage").value;
+    let name = document.getElementById("itemname").value;
+    let details = document.getElementById("itemdetails").value;
+    let stock = document.getElementById("itemstock").value;
+    let price = document.getElementById("itemprice").value;
+    let date = document.getElementById("itemdate").value;
+
+if (name.trim() !== "" && details.trim() !== "" && stock.trim() !== "" && price.trim() !== "" && date.trim() !== "") {
+    alert("Product edited succesfully!")
+    document.getElementById("editmenuid").classList.toggle("eactive");
+    currentlyEditingRow.cells[0].innerText = image;
+    currentlyEditingRow.cells[1].innerText = name;
+    currentlyEditingRow.cells[2].innerText = details;
+    currentlyEditingRow.cells[3].innerText = stock;
+    currentlyEditingRow.cells[4].innerText = price;
+    currentlyEditingRow.cells[5].innerText = date;
+
+    document.getElementById("itemimage").value = "";
+    document.getElementById("itemname").value = "";
+    document.getElementById("itemdetails").value = "";
+    document.getElementById("itemstock").value = "";
+    document.getElementById("itemprice").value = "";
+    document.getElementById("itemdate").value = "";
+
+} else {
+    alert("Please fill in everything (Image Not Required).");
+}
+}
 /*Delete Product*/
 function removeItem(button) {
     let row = button.parentNode.parentNode;
