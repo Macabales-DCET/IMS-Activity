@@ -72,16 +72,16 @@
         <div class="econtent">
             <h1 class="emenutitle">Edit Item Menu</h1>
             <div>
-                <input type="file" id="itemimage" accept="image/*">
-                <input type="text" id="itemname" placeholder="Name">
-                <input type="text" id="itemdetails" placeholder="Details">
-                <input type="number" id="itemstock" placeholder="Quantity">
-                <input type="number" id="itemprice" placeholder="Price (PHP)">
-                <input type="date" id="itemdate" placeholder="Date">
+                <input type="file" id="eitemimage" accept="image/*">
+                <input type="text" id="eitemname" placeholder="Name">
+                <input type="text" id="eitemdetails" placeholder="Details">
+                <input type="number" id="eitemstock" placeholder="Quantity">
+                <input type="number" id="eitemprice" placeholder="Price (PHP)">
+                <input type="date" id="eitemdate" placeholder="Date">
             </div>
             <div>
-                <button class="savechanges" type="submit" onclick="saveChanges()">Save Changes</button>
-                <button class="closeedit" type="submit" onclick="editItem()">Cancel</div>
+                <button id="saveItem" class="savechanges" type="submit" onclick="saveItem(this)">Save Changes</button>
+                <button class="closeedit" type="submit" onclick="cancelEdit()">Cancel</div>
             </div>   
         </div>
     </div>
